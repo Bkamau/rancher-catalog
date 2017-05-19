@@ -2,6 +2,7 @@ keycloak:
   environment:
     KEYCLOAK_USER: ${KEYCLOAK_USER}
     KEYCLOAK_PASSWORD: ${KEYCLOAK_PASSWORD}
+    PROXY_ADDRESS_FORWARDING: ${PROXY_ADDRESS_FORWARDING}
   labels:
     io.rancher.container.pull_image: always
     io.rancher.sidekicks: keycloak-datavolume
